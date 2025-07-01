@@ -12,7 +12,7 @@ public class PrePostSumViaDC {
     public static void postSum(int[] arr,int[] post,int index){
         if(index==arr.length-1)
             post[arr.length-1]=arr[arr.length-1];
-         else{Add commentMore actions
+        else{
             postSum(arr, post, index+1);
             post[index] = post[index+1]+arr[index];
         }
